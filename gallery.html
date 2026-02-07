@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Zeenat Car Detailing | Premium Work Portfolio</title>
+    <meta name="description" content="View our portfolio of ceramic coatings, PPF installations, and transformations. See the Zeenat Car Detailing difference.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F2A516',
+                        secondary: '#BF4011',
+                        dark: '#0A0A0A',
+                        darker: '#050505',
+                    },
+                    fontFamily: {
+                        heading: ['Orbitron', 'sans-serif'],
+                        body: ['Montserrat', 'sans-serif'],
+                        secondary: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #000428 0%, #004e92 100%); }
+        
+        /* Hide scrollbar for carousel but keep functionality */
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-darker text-white antialiased">
+    
+   <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-white/10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="assets/images/logo.svg" alt="Zeenat Car Detailing Logo" class="h-16 w-auto">
+                    <div>
+                        <h1 class="font-heading text-2xl font-black text-white uppercase tracking-wider">
+                            ZEE<span class="text-primary">NAT</span>
+                        </h1>
+                        <p class="font-body text-[10px] text-primary uppercase tracking-widest font-semibold">Car Detailing</p>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="font-body text-sm font-semibold text-gray-400 hover:text-primary transition uppercase tracking-wide">Home</a>
+                    <a href="services.html" class="font-body text-sm font-semibold text-gray-400 hover:text-primary transition uppercase tracking-wide">Services</a>
+                    <a href="gallery.html" class="font-body text-sm font-bold text-primary transition uppercase tracking-wide">Gallery</a>
+                    <a href="about.html" class="font-body text-sm font-semibold text-gray-400 hover:text-primary transition uppercase tracking-wide">About</a>
+                    <a href="contact.html" class="font-body text-sm font-semibold text-gray-400 hover:text-primary transition uppercase tracking-wide">Contact</a>
+                </div>
+                
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="tel:+923086144661" class="flex items-center gap-2 text-sm font-bold text-white">0308-6144661</a>
+                    <a href="https://wa.me/923086144661" class="bg-primary text-black px-6 py-3 rounded font-black uppercase text-xs tracking-widest hover:bg-yellow-500 transition">Book Now</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-black border-t border-white/10">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block font-body text-sm font-semibold text-gray-400 hover:text-primary uppercase tracking-wide">Home</a>
+                <a href="services.html" class="block font-body text-sm font-semibold text-gray-400 hover:text-primary uppercase tracking-wide">Services</a>
+                <a href="gallery.html" class="block font-body text-sm font-semibold text-gray-400 hover:text-primary uppercase tracking-wide">Gallery</a>
+                <a href="about.html" class="block font-body text-sm font-semibold text-gray-400 hover:text-primary uppercase tracking-wide">About</a>
+                <a href="contact.html" class="block font-body text-sm font-semibold text-gray-400 hover:text-primary uppercase tracking-wide">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="relative pt-32 pb-20 bg-darker hero-gradient overflow-hidden">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-heading text-4xl md:text-6xl font-black uppercase text-white mb-6">
+                Work <span class="text-primary">Gallery</span>
+            </h1>
+            <p class="font-secondary text-gray-300 max-w-2xl mx-auto text-lg md:text-xl font-light">
+                Witness the transformation. Real results, real shine.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Video Showcase (Carousel on all sizes) -->
+            <div class="mb-20">
+                <h2 class="font-heading text-2xl font-black text-white uppercase mb-8 border-l-4 border-primary pl-4">Video Highlights</h2>
+                <!-- Desktop: Grid / Mobile: Carousel -->
+                <div class="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto hide-scroll snap-x snap-mandatory md:overflow-visible">
+                    
+                     <!-- Video 1 -->
+                    <div class="min-w-[85vw] md:min-w-0 snap-center rounded-xl overflow-hidden border border-gray-800 bg-darker">
+                        <div class="aspect-video">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/placeholder1" title="Zeenat Car Detailing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-white uppercase text-sm">Ceramic Coating Application</h3>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="min-w-[85vw] md:min-w-0 snap-center rounded-xl overflow-hidden border border-gray-800 bg-darker">
+                        <div class="aspect-video">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/placeholder2" title="Zeenat Car Detailing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-white uppercase text-sm">PPF Installation Process</h3>
+                        </div>
+                    </div>
+
+                     <!-- Video 3 -->
+                    <div class="min-w-[85vw] md:min-w-0 snap-center rounded-xl overflow-hidden border border-gray-800 bg-darker">
+                        <div class="aspect-video">
+                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/placeholder3" title="Zeenat Car Detailing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-white uppercase text-sm">Interior Transformation</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div>
+                <h2 class="font-heading text-2xl font-black text-white uppercase mb-8 border-l-4 border-primary pl-4">Recent Projects</h2>
+                
+                <!-- Filter Buttons (Visual Only for now) -->
+                <div class="flex gap-2 overflow-x-auto pb-6 mb-4 hide-scroll">
+                    <button class="px-6 py-2 bg-primary text-black font-bold uppercase text-xs rounded-full whitespace-nowrap">All Work</button>
+                    <button class="px-6 py-2 bg-darker border border-gray-800 text-gray-400 font-bold uppercase text-xs rounded-full whitespace-nowrap hover:border-primary hover:text-white transition">Ceramic</button>
+                    <button class="px-6 py-2 bg-darker border border-gray-800 text-gray-400 font-bold uppercase text-xs rounded-full whitespace-nowrap hover:border-primary hover:text-white transition">PPF</button>
+                    <button class="px-6 py-2 bg-darker border border-gray-800 text-gray-400 font-bold uppercase text-xs rounded-full whitespace-nowrap hover:border-primary hover:text-white transition">Interior</button>
+                </div>
+
+                <!-- Photos Container: Grid Desk / Carousel Mobile -->
+                <div class="flex md:grid md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-auto hide-scroll snap-x snap-mandatory md:overflow-visible pb-8">
+                    
+                    <!-- Item 1 -->
+                    <div class="min-w-[70vw] md:min-w-0 snap-center group relative aspect-[3/4] md:aspect-square bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+                        <div class="absolute inset-0 bg-gray-800 flex items-center justify-center text-gray-600">Image 1</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-primary text-xs font-bold uppercase mb-1">Toyota Fortuner</span>
+                            <h3 class="text-white font-bold uppercase">Ceramic Coating</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="min-w-[70vw] md:min-w-0 snap-center group relative aspect-[3/4] md:aspect-square bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+                        <div class="absolute inset-0 bg-gray-800 flex items-center justify-center text-gray-600">Image 2</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                             <span class="text-primary text-xs font-bold uppercase mb-1">Honda Civic</span>
+                            <h3 class="text-white font-bold uppercase">Paint Correction</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="min-w-[70vw] md:min-w-0 snap-center group relative aspect-[3/4] md:aspect-square bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+                         <div class="absolute inset-0 bg-gray-800 flex items-center justify-center text-gray-600">Image 3</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                             <span class="text-primary text-xs font-bold uppercase mb-1">Audi A4</span>
+                            <h3 class="text-white font-bold uppercase">Interior Detail</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="min-w-[70vw] md:min-w-0 snap-center group relative aspect-[3/4] md:aspect-square bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+                         <div class="absolute inset-0 bg-gray-800 flex items-center justify-center text-gray-600">Image 4</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                             <span class="text-primary text-xs font-bold uppercase mb-1">Kia Sportage</span>
+                            <h3 class="text-white font-bold uppercase">PPF Front</h3>
+                        </div>
+                    </div>
+
+                     <!-- Item 5 -->
+                     <div class="min-w-[70vw] md:min-w-0 snap-center group relative aspect-[3/4] md:aspect-square bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+                        <div class="absolute inset-0 bg-gray-800 flex items-center justify-center text-gray-600">Image 5</div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                             <span class="text-primary text-xs font-bold uppercase mb-1">BMW 5 Series</span>
+                            <h3 class="text-white font-bold uppercase">Full Detail</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="text-center mt-8 md:hidden">
+                    <p class="text-xs text-gray-500 uppercase tracking-widest">Swipe to see more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="assets/images/logo.svg" alt="Zeenat Logo" class="h-12 w-auto">
+                        <div>
+                            <h3 class="font-heading text-xl font-black text-white uppercase">ZEE<span class="text-primary">NAT</span></h3>
+                            <p class="font-body text-[10px] text-primary uppercase tracking-widest">Car Detailing</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <h4 class="font-heading text-xs font-black uppercase tracking-widest text-primary mb-6">Quick Links</h4>
+                    <ul class="space-y-3 font-body text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="gallery.html" class="text-white transition font-bold">Gallery</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                     <h4 class="font-heading text-xs font-black uppercase tracking-widest text-primary mb-6">Services</h4>
+                    <ul class="space-y-3 font-body text-sm text-gray-400">
+                        <li><a href="services.html#ceramic" class="hover:text-white transition">Ceramic Coating</a></li>
+                        <li><a href="services.html#ppf" class="hover:text-white transition">PPF Installation</a></li>
+                        <li><a href="services.html#interior" class="hover:text-white transition">Interior Detailing</a></li>
+                    </ul>
+                </div>
+                <div>
+                     <h4 class="font-heading text-xs font-black uppercase tracking-widest text-primary mb-6">Contact Us</h4>
+                    <ul class="space-y-4 font-body text-sm text-gray-400">
+                         <li class="flex gap-3"><span class="text-primary">📞</span><a href="tel:+923086144661" class="hover:text-white">0308-6144661</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+                <p>&copy; 2025 Zeenat Car Detailing. All rights reserved.</p>
+                <p>Developed by <span class="text-white font-bold">Muhammad Faizan</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

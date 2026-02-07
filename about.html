@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Zeenat Car Detailing | Mobile Car Detailing Lahore</title>
+    <meta name="description" content="Learn about Zeenat Car Detailing, Lahore's premier mobile car detailing service. innovative techniques, premium products, and a passion for perfection.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F2A516',
+                        secondary: '#BF4011',
+                        dark: '#0A0A0A',
+                        darker: '#050505',
+                    },
+                    fontFamily: {
+                        heading: ['Orbitron', 'sans-serif'],
+                        body: ['Montserrat', 'sans-serif'],
+                        secondary: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+        }
+    </style>
+</head>
+<body class="bg-darker text-white antialiased">
+    
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-white/10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="assets/images/logo.svg" alt="Zeenat Car Detailing Logo" class="h-16 w-auto">
+                    <div>
+                        <h1 class="font-heading text-2xl font-black text-white uppercase tracking-wider">
+                            ZEE<span class="text-primary">NAT</span>
+                        </h1>
+                        <p class="font-body text-[10px] text-primary uppercase tracking-widest font-semibold">Car Detailing</p>
+                    </div>
+                </a>
+                
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="font-body text-sm font-semibold text-gray-400 hover:text-primary transition uppercase tracking-wide">Home</a>
+                    <a href="services.html" class="font-body text-sm font-semibold text-gray-400 hover:text-primary transition uppercase tracking-wide">Services</a>
+                    <a href="gallery.html" class="font-body text-sm font-semibold text-gray-400 hover:text-primary transition uppercase tracking-wide">Gallery</a>
+                    <a href="about.html" class="font-body text-sm font-bold text-primary transition uppercase tracking-wide">About</a>
+                    <a href="contact.html" class="font-body text-sm font-semibold text-gray-400 hover:text-primary transition uppercase tracking-wide">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="tel:+923086144661" class="flex items-center gap-2 text-sm font-bold text-white">
+                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        0308-6144661
+                    </a>
+                    <a href="index.html#contact" class="bg-primary text-black px-6 py-3 rounded font-black uppercase text-xs tracking-widest hover:bg-yellow-500 transition">
+                        Book Now
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-black border-t border-white/10">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block font-body text-sm font-semibold text-gray-400 hover:text-primary uppercase tracking-wide">Home</a>
+                <a href="services.html" class="block font-body text-sm font-semibold text-gray-400 hover:text-primary uppercase tracking-wide">Services</a>
+                <a href="gallery.html" class="block font-body text-sm font-semibold text-gray-400 hover:text-primary uppercase tracking-wide">Gallery</a>
+                <a href="about.html" class="block font-body text-sm font-bold text-primary uppercase tracking-wide">About</a>
+                <a href="contact.html" class="block font-body text-sm font-semibold text-gray-400 hover:text-primary uppercase tracking-wide">Contact</a>
+                <a href="tel:+923086144661" class="block bg-primary text-black px-6 py-3 rounded font-black text-center uppercase text-xs tracking-widest">
+                    Call: 0308-6144661
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="relative pt-32 pb-20 bg-darker hero-gradient overflow-hidden">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-heading text-4xl md:text-6xl font-black uppercase text-white mb-6">
+                About <span class="text-primary">Zeenat</span>
+            </h1>
+            <p class="font-secondary text-gray-300 max-w-2xl mx-auto text-lg md:text-xl font-light">
+                Redefining car care in Lahore with premium mobile detailing services that bring the showroom shine to your doorstep.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block bg-primary/10 border border-primary/30 px-4 py-1 rounded-full mb-6">
+                        <span class="text-primary font-black text-xs uppercase tracking-widest">Our Mission</span>
+                    </div>
+                    <h2 class="font-heading text-3xl md:text-4xl font-black uppercase text-white mb-6 leading-tight">
+                        Quality Meets <span class="text-primary">Convenience</span>
+                    </h2>
+                    <p class="font-body text-gray-400 leading-relaxed mb-6">
+                        Zeenat Car Detailing was founded with a simple yet ambitious goal: to provide the highest quality car care services in Lahore without the inconvenience of traditional workshops. We understand that your time is valuable, which is why we've revolutionized the industry by bringing professional-grade detailing directly to your home or office.
+                    </p>
+                    <p class="font-body text-gray-400 leading-relaxed mb-6">
+                        Using only premium imported products from Germany and Japan, we ensure that every vehicle we treat receives the best possible care. From basic washes to advanced ceramic coatings and Paint Protection Film (PPF), our certified technicians treat every car as if it were their own.
+                    </p>
+                    
+                    <ul class="space-y-4 mt-8">
+                        <li class="flex items-center gap-3">
+                            <span class="bg-primary/20 text-primary p-1 rounded-full">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </span>
+                            <span class="text-gray-300 font-semibold">Certified Technicians</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-primary/20 text-primary p-1 rounded-full">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </span>
+                            <span class="text-gray-300 font-semibold">Eco-Friendly Products</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="bg-primary/20 text-primary p-1 rounded-full">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </span>
+                            <span class="text-gray-300 font-semibold">100% Satisfaction Guarantee</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Image Placeholder -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative bg-darker p-2 rounded-lg border border-gray-800">
+                        <div class="h-80 md:h-96 bg-gray-900 rounded flex items-center justify-center overflow-hidden">
+                             <!-- Replace with actual image later -->
+                             <span class="text-gray-600 font-heading text-lg uppercase tracking-widest">Detailing in Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="py-20 bg-darker border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-5xl font-black uppercase text-white mb-4">
+                    Meet the <span class="text-primary">Founder</span>
+                </h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-black border border-gray-800 rounded-2xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                <!-- Background decoration -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+                    <!-- Photo -->
+                    <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 relative group">
+                        <div class="absolute inset-0 bg-primary/20 rounded-full blur-md group-hover:animate-pulse transition duration-500"></div>
+                        <div class="relative w-full h-full rounded-full border-4 border-primary/50 overflow-hidden shadow-2xl bg-gray-900 flex items-center justify-center">
+                            <!-- Placeholder for founder image -->
+                            <img src="assets/images/logo.svg" alt="Muhammad Faizan" class="w-full h-full object-cover opacity-80 scale-110"> 
+                        </div>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="text-center md:text-left flex-1">
+                        <div class="mb-6">
+                            <h3 class="font-heading text-3xl md:text-4xl font-black text-white uppercase mb-2">Muhammad Faizan</h3>
+                            <p class="font-secondary text-primary font-bold uppercase tracking-widest text-sm">Founder & CEO</p>
+                        </div>
+                        
+                        <div class="relative">
+                            <svg class="absolute -top-4 -left-4 w-8 h-8 text-gray-700 transform -scale-x-100" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.0547 15.1953 15.2617 16.6328 14.5469C17.6562 14.0547 18.0664 13.918 18.0664 12.875L18.0664 9L15.0469 9C14.2812 9 13.6289 8.35156 13.6289 7.58594L13.6289 4.14844C13.6289 3.38281 14.2812 2.73438 15.0469 2.73438L19.5273 2.73438C20.293 2.73438 20.9453 3.38281 20.9453 4.14844L20.9453 11.4609C20.9453 14.4922 19.3398 16.4805 17.5273 17.3828C16.3242 17.9805 15.5586 18.0664 14.017 18L14.017 21ZM5.52734 21L5.52734 18C5.52734 16.0547 6.70547 15.2617 8.14297 14.5469C9.16641 14.0547 9.57656 13.918 9.57656 12.875L9.57656 9L6.55703 9C5.79141 9 5.13906 8.35156 5.13906 7.58594L5.13906 4.14844C5.13906 3.38281 5.79141 2.73438 6.55703 2.73438L11.0375 2.73438C11.8031 2.73438 12.4555 3.38281 12.4555 4.14844L12.4555 11.4609C12.4555 14.4922 10.85 16.4805 9.0375 17.3828C7.83438 17.9805 7.06875 18.0664 5.52734 18L5.52734 21Z"/></svg>
+                            <p class="font-body text-gray-300 leading-relaxed mb-8 italic px-6 relative z-10 text-lg">
+                                "I started Zeenat based on a simple belief: <span class="text-white font-bold">your car deserves better.</span> We don't just wash cars; we restore them. Every swirl mark removed and every gloss enhanced is a testament to our dedication to perfection."
+                            </p>
+                        </div>
+                        
+                        <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                            <div class="bg-dark px-6 py-3 rounded border border-gray-800 text-center min-w-[100px]">
+                                <span class="block font-heading text-2xl font-black text-white">7+</span>
+                                <span class="text-[10px] text-gray-500 uppercase tracking-wider font-bold">Years Exp.</span>
+                            </div>
+                            <div class="bg-dark px-6 py-3 rounded border border-gray-800 text-center min-w-[100px]">
+                                <span class="block font-heading text-2xl font-black text-white">2k+</span>
+                                <span class="text-[10px] text-gray-500 uppercase tracking-wider font-bold">Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="assets/images/logo.svg" alt="Zeenat Logo" class="h-12 w-auto">
+                        <div>
+                            <h3 class="font-heading text-xl font-black text-white uppercase">
+                                ZEE<span class="text-primary">NAT</span>
+                            </h3>
+                            <p class="font-body text-[10px] text-primary uppercase tracking-widest">Car Detailing</p>
+                        </div>
+                    </div>
+                    <p class="font-body text-sm text-gray-400 mb-6">
+                        Premium mobile car detailing services in Lahore. Using advanced Japanese and German technology.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading text-xs font-black uppercase tracking-widest text-primary mb-6">Quick Links</h4>
+                    <ul class="space-y-3 font-body text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition">Gallery</a></li>
+                        <li><a href="about.html" class="text-white transition font-bold">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="font-heading text-xs font-black uppercase tracking-widest text-primary mb-6">Services</h4>
+                    <ul class="space-y-3 font-body text-sm text-gray-400">
+                        <li><a href="services.html" class="hover:text-white transition">Ceramic Coating</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">PPF Installation</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Interior Detailing</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Paint Correction</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-heading text-xs font-black uppercase tracking-widest text-primary mb-6">Contact Us</h4>
+                    <ul class="space-y-4 font-body text-sm text-gray-400">
+                        <li class="flex gap-3">
+                            <span class="text-primary">📍</span>
+                            <span>DHA Phase 4, Near Kamahan Flyover, Lahore</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-primary">📞</span>
+                            <a href="tel:+923086144661" class="hover:text-white">0308-6144661</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+                <p>&copy; 2025 Zeenat Car Detailing. All rights reserved.</p>
+                <p>Developed by <span class="text-white font-bold">Muhammad Faizan</span></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Main JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

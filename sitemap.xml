@@ -31,10 +31,4 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog -->
-  <url>
-    <loc>https://zeenatcardetailing.pk/blog.html</loc>
-    <priority>0.6</priority>
-  </url>
-
 </urlset>

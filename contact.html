@@ -225,14 +225,33 @@
             </div>
             
              <!-- Map Section (Placeholder) -->
-             <div class="mt-20">
-                <div class="w-full h-96 bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3403.74813901738!2d74.3917!3d31.4486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919079cef2a9015%3A0x524d15051122e561!2sZeenat%20Car%20Detailing!5e0!3m2!1sen!2s!4v1770544755748!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
-            </div>
-        </div>
-    </section>
+            <div class="mt-20">
+                <div
+                    class="
+                    w-full
+                    rounded-lg
+                    overflow-hidden
+                    border border-gray-800
+                    bg-gray-900
 
-    
+                    h-64            /* mobile */
+                    sm:h-72         /* small screens */
+                    md:h-80         /* tablets */
+                    lg:h-96         /* laptops */
+                    xl:h-[32rem]    /* large desktop */
+                    "
+                >
+                    <iframe
+                    class="w-full h-full"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3403.74813901738!2d74.3917!3d31.4486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919079cef2a9015%3A0x524d15051122e561!2sZeenat%20Car%20Detailing!5e0!3m2!1sen!2s!4v1770544755748!5m2!1sen!2s"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+
+    </section>
 
     <!-- Footer -->
     <footer class="bg-black border-t border-gray-800 py-12">
